@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700");
+
+:root {
+  --space-small: 0.5rem;
+  --space-large: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(226, 226, 226);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.foo-header {
+  background: rgb(14, 177, 101);
+  padding: var(--space-large) 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.wrapper-movies {
+  margin: 0 var(--space-large);
+  width: 100%;
+}
+
+form {
+  margin: var(--space-large);
+}
+
+.search-bar {
+  border: none;
+  border-radius: var(--space-small);
+  color: rgb(56, 65, 61);
+
+  padding: var(--space-small);
+
+  width: 70%;
+}
+
+.search-bar + button {
+  border: none;
+  border-radius: var(--space-small);
+  background: rgb(0, 171, 214);
+  color: white;
+
+  margin: 0 var(--space-small);
+  padding: var(--space-small);
+}
+
+.movie {
+  display: block;
+  margin: var(--space-large) auto;
+  width: 100%;
+}
+
+.movie img {
+  display: block;
+  max-width: 120px;
+  margin-bottom: var(--space-large);
+}
+
+.movie h3,
+p {
+  display: block;
+}
+
+.movie p {
+  width: 90%;
+}
+
+@media screen and (min-width: 800px) {
+  .search-bar {
+    width: 90%;
+  }
+  .movie {
+    float: left;
+    height: 200px;
+    width: 45%;
+  }
+  .movie img {
+    float: left;
+    margin-right: var(--space-large);
+    margin-bottom: 0;
+  }
+  .movie p {
+    margin: var(--space-small);
+    width: 90%;
+  }
+}
